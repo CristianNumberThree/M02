@@ -1,3 +1,6 @@
+#Cristian Escobedo
+#M02 Lab-Case Study v1.3
+#The purpose of this program is to determine whether the student being specified belongs in of two possible categories and if they do not then they are considered neutral
 #Declaration of variables
 name=""
 gpa=0.0
