@@ -3,6 +3,7 @@
 #The purpose of this program is to determine whether the student being specified belongs in of two possible categories and if they do not then they are considered neutral
 #Declaration of variables
 name=""
+first_name=""
 gpa=0.0
 ZZZ="ZZZ"
 
@@ -24,7 +25,10 @@ while name != ZZZ:
 
     #Continues if ZZZ was not entered
     else:
-        
+        print("Enter student's first name")
+
+        first_name=input()
+
         #statement that prints asking for a float value to compare in the if statement
         print("Enter the student's GPA and press enter")
         
@@ -33,12 +37,12 @@ while name != ZZZ:
         
         #Checkpoint 1 if the GPA applies then the student recieves a special status
         if gpa > 3.49:
-            print(name,"has made the Dean's List")
+            print(first_name,name,"has made the Dean's List")
         
         #Checkpoint 2 if the GPA didn't apply to the above checkpoint but this checkpoint does apply then a statement prints
         elif gpa > 3.25:
-            print(name,"has made the Honor Roll")
+            print(first_name,name,"has made the Honor Roll")
         
         #Statement that prints if niether of the above mentioned statuses applies
         else:
-            print("No status change for",name)
+            print("No status change for",first_name,name)
